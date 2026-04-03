@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Writing from the Himalayas — Trek Guides and Mountain Stories</title>
+  <meta name="description" content="Trek guides, travel planning, and mountain life dispatches from Himachal Pradesh. Written by Abhinav Chauhan — someone who actually lives and walks here.">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <a href="../index.html" class="nav-logo">
+    <svg width="36" height="42" viewBox="0 0 120 140" fill="none"><polygon points="60,14 82,52 60,74 38,52" fill="#FFFFFF"/><line x1="60" y1="36" x2="60" y2="74" stroke="#0D1B2A" stroke-width="2"/><circle cx="60" cy="78" r="6" fill="#0E7C7B"/><rect x="70" y="90" width="26" height="3.5" rx="1.75" fill="#FFFFFF" opacity="0.9"/><rect x="70" y="98" width="19" height="3.5" rx="1.75" fill="#FFFFFF" opacity="0.55"/><rect x="70" y="106" width="23" height="3.5" rx="1.75" fill="#FFFFFF" opacity="0.3"/><rect x="64" y="90" width="3.5" height="3.5" rx="0.8" fill="#0E7C7B"/></svg>
+    <div><span class="nav-logo-text">Abhinav Chauhan</span><span class="nav-logo-sub">Ink &amp; Index</span></div>
+  </a>
+  <div class="nav-links">
+    <a href="../index.html">Home</a>
+    <a href="../about.html">About</a>
+    <a href="index.html" class="active">Writing</a>
+    <div class="dropdown">
+      <span class="dropdown-label">Services</span>
+      <div class="dropdown-menu">
+        <a href="../services/index.html">All Services</a>
+        <a href="../services/local-seo.html">Local SEO</a>
+        <a href="../services/seo-audits.html">SEO Audits</a>
+        <a href="../services/content-strategy.html">Content Strategy</a>
+        <a href="../services/on-page-seo.html">On-Page SEO</a>
+        <a href="../services/seo-retainers.html">SEO Retainers</a>
+        <a href="../services/google-business-profile.html">Google Business Profile</a>
+      </div>
+    </div>
+    <a href="../portfolio/index.html">Portfolio</a>
+    <a href="../contact.html" class="btn btn-teal" style="padding:8px 20px;font-size:.68rem;">Work With Me</a>
+  </div>
+  <button class="nav-hamburger" aria-label="Open menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+<!-- MOBILE DRAWER -->
+<div class="nav-drawer">
+  <a href="../index.html">Home</a>
+  <a href="../about.html">About</a>
+  <a href="../blog/index.html">Writing</a>
+  <span class="drawer-section-label">Services</span>
+  <a href="../services/index.html" class="drawer-sub">All Services</a>
+  <a href="../services/local-seo.html" class="drawer-sub">Local SEO</a>
+  <a href="../services/seo-audits.html" class="drawer-sub">SEO Audits</a>
+  <a href="../services/content-strategy.html" class="drawer-sub">Content Strategy</a>
+  <a href="../services/on-page-seo.html" class="drawer-sub">On-Page SEO</a>
+  <a href="../services/seo-retainers.html" class="drawer-sub">SEO Retainers</a>
+  <a href="../services/google-business-profile.html" class="drawer-sub">Google Business Profile</a>
+  <a href="../portfolio/index.html">Portfolio</a>
+  <a href="../contact.html" class="drawer-cta">Work With Me</a>
+</div>
+
+<!-- ── HERO — BANNER 02: STACKED HEADER ──────────────────────── -->
+<section style="background:var(--navy); padding:72px 24px; text-align:center;">
+  <div class="container" style="max-width:640px;">
+    <span class="eyebrow" style="color:var(--teal);">Writing from the Himalayas</span>
+    <h1 style="color:var(--white); margin-bottom:16px;">Trek guides, mountain<br>stories, and travel notes.</h1>
+    <p style="color:rgba(255,255,255,.5); font-size:1.05rem;">Travel content from Himachal Pradesh. Written by someone who actually lives here and walks these trails.</p>
+  </div>
+</section>
+
+<!-- ── CATEGORY FILTER ────────────────────────────────────────── -->
+<div style="background:var(--white); border-bottom:1px solid var(--border); padding:0 24px; position:sticky; top:68px; z-index:50;">
+  <div class="container" style="display:flex; gap:0;">
+    <button onclick="filterPosts('all')" id="filter-all" style="padding:18px 24px; background:none; border:none; border-bottom:2.5px solid var(--teal); color:var(--navy); font-family:var(--font-sans); font-size:.72rem; letter-spacing:.15em; text-transform:uppercase; cursor:pointer;">All Posts</button>
+    <button onclick="filterPosts('trek')" id="filter-trek" style="padding:18px 24px; background:none; border:none; border-bottom:2.5px solid transparent; color:var(--lgrey); font-family:var(--font-sans); font-size:.72rem; letter-spacing:.15em; text-transform:uppercase; cursor:pointer;">Trek Guides</button>
+    <button onclick="filterPosts('life')" id="filter-life" style="padding:18px 24px; background:none; border:none; border-bottom:2.5px solid transparent; color:var(--lgrey); font-family:var(--font-sans); font-size:.72rem; letter-spacing:.15em; text-transform:uppercase; cursor:pointer;">Mountain Life</button>
+    <button onclick="filterPosts('travel')" id="filter-travel" style="padding:18px 24px; background:none; border:none; border-bottom:2.5px solid transparent; color:var(--lgrey); font-family:var(--font-sans); font-size:.72rem; letter-spacing:.15em; text-transform:uppercase; cursor:pointer;">Travel Planning</button>
+  </div>
+</div>
+
+<!-- ── POST GRID ──────────────────────────────────────────────── -->
+<section class="section section-off">
+  <div class="container">
+    <div class="grid-3" id="post-grid">
+
+      <div class="card" data-cat="trek">
+        <div class="ph ph-img mb16"></div>
+        <span class="tag tag-teal">Trek Guide</span>
+        <h3 style="margin-bottom:8px;">The Complete Triund Trek Guide</h3>
+        <p style="font-size:.85rem; margin-bottom:12px;">The route, the campsites, the best season, and what the Dhauladhar range looks like at first light from the ridge.</p>
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-top:16px;">
+          <span style="font-size:.7rem; color:var(--lgrey); font-family:var(--font-sans);">Jan 2025 · 8 min read</span>
+          <a href="triund-trek-guide.html" class="card-link">Read</a>
+        </div>
+      </div>
+
+      <div class="card" data-cat="travel">
+        <div class="ph ph-img mb16"></div>
+        <span class="tag tag-navy">Travel Planning</span>
+        <h3 style="margin-bottom:8px;">When to Visit Himachal Pradesh — A Month-by-Month Guide</h3>
+        <p style="font-size:.85rem; margin-bottom:12px;">Peak season, off season, and the sweet spots nobody talks about. What the weather actually does, and what that means for your trip.</p>
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-top:16px;">
+          <span style="font-size:.7rem; color:var(--lgrey); font-family:var(--font-sans);">Jan 2025 · 10 min read</span>
+          <a href="when-to-visit-himachal.html" class="card-link">Read</a>
+        </div>
+      </div>
+
+      <div class="card" data-cat="travel">
+        <div class="ph ph-img mb16"></div>
+        <span class="tag tag-navy">Travel Planning</span>
+        <h3 style="margin-bottom:8px;">The Best Base Towns in Himachal Pradesh</h3>
+        <p style="font-size:.85rem; margin-bottom:12px;">An honest guide to where to stay in Himachal, what each town gives you access to, and which type of traveller each one suits.</p>
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-top:16px;">
+          <span style="font-size:.7rem; color:var(--lgrey); font-family:var(--font-sans);">Feb 2025 · 11 min read</span>
+          <a href="best-base-towns-himachal.html" class="card-link">Read</a>
+        </div>
+      </div>
+
+      <div class="card" data-cat="trek">
+        <div class="ph ph-img mb16"></div>
+        <span class="tag tag-teal">Trek Guide</span>
+        <h3 style="margin-bottom:8px;">The Kheerganga Trek Guide</h3>
+        <p style="font-size:.85rem; margin-bottom:12px;">Hot springs, forest trails, and why Parvati Valley keeps people longer than they plan.</p>
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-top:16px;">
+          <span style="font-size:.7rem; color:var(--lgrey); font-family:var(--font-sans);">Oct 2024 · 7 min read</span>
+          <a href="kheerganga-trek-guide.html" class="card-link">Read</a>
+        </div>
+      </div>
+
+      <div class="card" data-cat="trek">
+        <div class="ph ph-img mb16"></div>
+        <span class="tag tag-teal">Trek Guide</span>
+        <h3 style="margin-bottom:8px;">The Hampta Pass Trek Guide</h3>
+        <p style="font-size:.85rem; margin-bottom:12px;">How to cross from green valleys into desert landscape in two days. Everything you need before you go.</p>
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-top:16px;">
+          <span style="font-size:.7rem; color:var(--lgrey); font-family:var(--font-sans);">Sep 2024 · 9 min read</span>
+          <a href="hampta-pass-trek-guide.html" class="card-link">Read</a>
+        </div>
+      </div>
+
+      <div class="card" data-cat="travel">
+        <div class="ph ph-img mb16"></div>
+        <span class="tag tag-navy">Travel Planning</span>
+        <h3 style="margin-bottom:8px;">The Spiti Valley Road Trip Guide</h3>
+        <p style="font-size:.85rem; margin-bottom:12px;">Everything you need to know before you go — route, timing, permits, and what nobody tells you until you are already there.</p>
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-top:16px;">
+          <span style="font-size:.7rem; color:var(--lgrey); font-family:var(--font-sans);">Nov 2024 · 13 min read</span>
+          <a href="spiti-valley-road-trip.html" class="card-link">Read</a>
+        </div>
+      </div>
+
+      <div class="card" data-cat="life">
+        <div class="ph ph-img mb16"></div>
+        <span class="tag tag-gold">Mountain Life</span>
+        <h3 style="margin-bottom:8px;">Why Small Mountain Towns Are the Best Place to Slow Down</h3>
+        <p style="font-size:.85rem; margin-bottom:12px;">The cafes stay open past midnight. The conversations go somewhere. A personal dispatch from a winter in the hills.</p>
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-top:16px;">
+          <span style="font-size:.7rem; color:var(--lgrey); font-family:var(--font-sans);">Dec 2024 · 5 min read</span>
+          <a href="why-small-mountain-towns.html" class="card-link">Read</a>
+        </div>
+      </div>
+
+      <div class="card" data-cat="life">
+        <div class="ph ph-img mb16"></div>
+        <span class="tag tag-gold">Mountain Life</span>
+        <h3 style="margin-bottom:8px;">What a Himachali Winter Actually Feels Like</h3>
+        <p style="font-size:.85rem; margin-bottom:12px;">When you are not just visiting. A dispatch from the cold months — the quiet, the snow, the pace of it.</p>
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-top:16px;">
+          <span style="font-size:.7rem; color:var(--lgrey); font-family:var(--font-sans);">Dec 2024 · 6 min read</span>
+          <a href="himachali-winter.html" class="card-link">Read</a>
+        </div>
+      </div>
+
+      <div class="card" data-cat="life">
+        <div class="ph ph-img mb16"></div>
+        <span class="tag tag-gold">Mountain Life</span>
+        <h3 style="margin-bottom:8px;">The People Who Keep the Mountains Running</h3>
+        <p style="font-size:.85rem; margin-bottom:12px;">Portraits of the locals who make travel in Himachal possible — guesthouse owners, trail guides, dhaba cooks.</p>
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-top:16px;">
+          <span style="font-size:.7rem; color:var(--lgrey); font-family:var(--font-sans);">Sep 2024 · 9 min read</span>
+          <a href="people-keep-mountains-running.html" class="card-link">Read</a>
+        </div>
+      </div>
+
+      <div class="card" data-cat="life">
+        <div class="ph ph-img mb16"></div>
+        <span class="tag tag-gold">Mountain Life</span>
+        <h3 style="margin-bottom:8px;">Apple Season in Kinnaur</h3>
+        <p style="font-size:.85rem; margin-bottom:12px;">How an entire economy moves in six weeks. What happens in the orchards of Kinnaur when the harvest comes.</p>
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-top:16px;">
+          <span style="font-size:.7rem; color:var(--lgrey); font-family:var(--font-sans);">Oct 2024 · 8 min read</span>
+          <a href="apple-season-kinnaur.html" class="card-link">Read</a>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Pagination removed — all posts shown on one page -->
+  </div>
+</section>
+
+
+<!-- ── SEO CTA STRIP ──────────────────────────────────────────── -->
+<section class="cta-strip">
+  <div class="container">
+    <span class="eyebrow" style="display:block;text-align:center;">For Businesses</span>
+    <h2 style="color:var(--white);">Need SEO for your Himachal business?</h2>
+    <p>If your customers are searching Google before they visit, you need to be visible. That is exactly what I do.</p>
+    <a href="../services/index.html" class="btn btn-teal">See SEO Services</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand"><svg width="36" height="42" viewBox="0 0 120 140" fill="none"><polygon points="60,14 82,52 60,74 38,52" fill="#FFFFFF"/><line x1="60" y1="36" x2="60" y2="74" stroke="#0D1B2A" stroke-width="2"/><circle cx="60" cy="78" r="6" fill="#0E7C7B"/></svg><p>Writing from the Himalayas. SEO for the businesses that call it home.</p></div>
+    <div class="footer-col"><h5>Writing</h5><a href="index.html">All Posts</a><a href="#">Trek Guides</a><a href="#">Mountain Life</a><a href="#">Travel Planning</a></div>
+    <div class="footer-col"><h5>Services</h5><a href="../services/local-seo.html">Local SEO</a><a href="../services/seo-audits.html">SEO Audits</a><a href="../services/content-strategy.html">Content Strategy</a></div>
+    <div class="footer-col"><h5>Site</h5><a href="../about.html">About</a><a href="../portfolio/index.html">Portfolio</a><a href="../contact.html">Contact</a></div>
+  </div>
+  <div class="footer-bottom"><p>2026 Abhinav Chauhan. Ink &amp; Index.</p><p>Built in the hills of <span style="color:var(--teal);">Himachal Pradesh.</span></p></div>
+</footer>
+
+<script>
+function filterPosts(cat) {
+  document.querySelectorAll('#post-grid .card').forEach(card => {
+    card.style.display = (cat === 'all' || card.dataset.cat === cat) ? 'block' : 'none';
+  });
+  document.querySelectorAll('[id^=filter-]').forEach(btn => {
+    btn.style.borderBottomColor = 'transparent';
+    btn.style.color = 'var(--lgrey)';
+  });
+  const active = document.getElementById('filter-' + cat);
+  if (active) { active.style.borderBottomColor = 'var(--teal)'; active.style.color = 'var(--navy)'; }
+}
+</script>
+<script src="../main.js"></script>
+</body>
+</html>

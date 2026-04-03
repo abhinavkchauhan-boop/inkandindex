@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+
+# Block duplicate and internal files
+Disallow: /components.html
+Disallow: /blog/blog-index.html
+Disallow: /services/services-index.html
+Disallow: /portfolio/portfolio-index.html
+
+Sitemap: https://abhinavchauhan.com/sitemap.xml
